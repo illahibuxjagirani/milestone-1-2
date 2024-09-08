@@ -57,18 +57,10 @@ body {
 .details-info p{
   display: flex;
   font-size: 22px;
+  flex-direction: column;
   
 }
 
-.details-info strong{
-  width: 25%;
-  
-}
-
-.details-info span{
-  width: 70%;
-
-}
 
 .social-links img {
   width: 30px;
@@ -172,10 +164,16 @@ transition: all 200ms;
       margin-bottom: 20px;
   }
 
- 
-
   .design-left,
   .design-right {
       width: 100%;
   }
 }
+
+@media (max-width:500px) {
+  .details-info p{
+    font-size: 15px;
+  }
+}
+
+
